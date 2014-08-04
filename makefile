@@ -8,17 +8,13 @@ CFLAGS		= -Wall \
 # CFLAGS		= -std=c++0x -Wall \
 # 		-I/$(INCDIR) \
 # 		-I.
-#LIBS		= -lm 
-#LIBS		= -lm -lopencv_core -lopencv_highgui -lopencv_objdetect -lopencv_imgproc -lopencv_video -lopencv_contrib
-#LIBS		= -lm -lcurl -lopencv_core -lopencv_highgui -lopencv_objdetect -lopencv_imgproc -lopencv_video -lopencv_contrib
+
 LIBS		= -lm -lusb
 
 #SRCS		= bind_test.cpp 
+
 OBJS		= $(SRCS:.c=.o)
-#PROGRAM		= motempl.exe
-#PROGRAM		= hub-ctrl.exe hub-ctrl-test.exe usb_hub_port1_power_ctr.exe
-#PROGRAM		= hub-ctrl.exe usb_hub_port1_power_ctr.exe
-PROGRAM		= hub-ctrl.exe usb_hub_port1_power_ctr_test.exe
+PROGRAM		= usb_hub_port1_power_ctr_test.exe
 
 all:		$(PROGRAM)
 
